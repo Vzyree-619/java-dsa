@@ -7,7 +7,6 @@ package Array;
 // Input: nums = [1, 1, 2] 
 // Output: 2
 
-
 public class RemoveDuplicates {
     public int removeD(int[] nums) {
         if (nums.length == 0) {
@@ -27,12 +26,12 @@ public class RemoveDuplicates {
 
     public static void main(String[] args) {
         RemoveDuplicates rd = new RemoveDuplicates();
-        int[] nums = {1, 1, 2, 2, 3, 3, 4, 4, 5};
+        int[] nums = { 1, 1, 2, 2, 3, 3, 4, 4, 5 };
         int newLength = rd.removeD(nums);
         System.out.println("New length: " + newLength);
         System.out.print("Array after removing duplicates: ");
         for (int i = 0; i < newLength; i++) {
-        System.out.print(nums[i] + " ");
+            System.out.print(nums[i] + " ");
         }
     }
 }
